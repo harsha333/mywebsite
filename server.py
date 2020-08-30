@@ -57,7 +57,8 @@ def submit_form():
 		data = request.form.to_dict()
 		#database_csv(data)
 		#print(data)
-		send_to_my_email(data)
+		#send_to_my_email(data)
+		database_fun(data)
 		return redirect('/thankyou.html')
 	else:
 		return 'something went wrong :( '
